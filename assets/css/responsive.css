@@ -1,0 +1,121 @@
+@media screen and (max-width:1199px) {
+    .search_box input {
+        width: 334px !important;
+    }
+
+    .service_item {
+        border: 0.5 solid #28225E !important;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .mt_8{
+        margin-top:80px;
+    }
+    .mb_8{
+        margin-bottom: 80px;
+    }
+}
+
+@media screen and (max-width:991px) {
+    .banner-content h1 {
+        font-size: 35px;
+        line-height: 48px;
+    }
+
+    .banner-content p {
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    .pt-120 {
+        padding-top: 60px;
+    }
+
+    .pb-120 {
+        padding-bottom: 60px;
+    }
+
+    .services-section .custom-shape-divider-top-1713715447 svg {
+        height: 44px;
+    }
+
+    .section-heading h2 {
+        font-size: 28px;
+    }
+
+    .hero_wrapper h3 {
+        font-size: 22px;
+    }
+
+    .hero_wrapper p {
+        font-size: 16px;
+    }
+}
+
+
+@media screen and (max-width:767px) {
+    .banner-content h1 {
+        font-size: 30px;
+        line-height: 45px;
+    }
+
+    .banner-content p {
+        font-size: 15px;
+        line-height: 28px;
+    }
+
+    .services-section .custom-shape-divider-top-1713715447 svg {
+        height: 25px;
+    }
+    .fixed_menu{
+        padding:18px 10px;
+    }
+    .fixed_menu ul li a {
+        width: 38px;
+        height: 38px;
+        line-height: 35px;
+    }
+}
+
+
+@media screen and (max-width:500px) {
+    .header-section .btn-primary {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+
+    .banner-content h1 {
+        font-size: 22px;
+        line-height: 37px;
+    }
+
+    .banner-content p {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .pt-120 {
+        padding-top: 30px;
+    }
+
+    .pb-120 {
+        padding-bottom: 30px;
+    }
+
+    .section-heading h2 {
+        font-size: 23px;
+    }
+
+    .team-section .bg-1 {
+        position: absolute;
+        top: -107px;
+        left: -40px;
+    }
+
+    .team-section .bg-2 {
+        position: absolute;
+        bottom: -107px;
+        right: -40px;
+    }
+}

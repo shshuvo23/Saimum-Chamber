@@ -1,0 +1,1188 @@
+/*! HTML5 Boilerplate v9.0.1 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 3.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+   * Remove text-shadow in selection highlight:
+   * https://twitter.com/miketaylr/status/12228805301
+   *
+   * Customize the background color to match your design.
+   */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+   * A better looking default horizontal rule
+   */
+a {
+    text-decoration: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+   * Remove the gap between audio, canvas, iframes,
+   * images, videos and the bottom of their containers:
+   * https://github.com/h5bp/html5-boilerplate/issues/440
+   */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+   * Remove default fieldset styles.
+   */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+   * Allow only vertical resizing of textareas.
+   */
+
+textarea {
+    resize: vertical;
+}
+
+/* font */
+@font-face {
+    font-family: 'clash-grotesk';
+    src: url('../font/clash-grotesk.eot');
+    src: url('../font/clash-grotesk.eot?#iefix') format('embedded-opentype'),
+        url('../font/clash-grotesk.woff2') format('woff2'),
+        url('../font/clash-grotesk.woff') format('woff'),
+        url('../font/clash-grotesk.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'clashgrotes-regular';
+    src: url('../font/clashgrotes-regular.eot');
+    src: url('../font/clashgrotes-regular.eot?#iefix') format('embedded-opentype'),
+        url('../font/clashgrotes-regular.woff2') format('woff2'),
+        url('../font/clashgrotes-regular.woff') format('woff'),
+        url('../font/clashgrotes-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'new-spirit';
+    src: url('../font/new-spirit.eot');
+    src: url('../font/new-spirit.eot?#iefix') format('embedded-opentype'),
+        url('../font/new-spirit.woff2') format('woff2'),
+        url('../font/new-spirit.woff') format('woff'),
+        url('../font/new-spirit.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+.btn-check:checked+.btn,
+.btn.active,
+.btn.show,
+.btn:first-child:active,
+:not(.btn-check)+.btn:active {
+    color: #fff;
+    background: var(--bg-primary) !important;
+    border-color: var(--bg-primary) !important;
+}
+
+body {
+    font-family: 'clashgrotes-regular', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'new-spirit', sans-serif !important;
+}
+
+
+:root {
+    --bg-primary: #FDBA55;
+    --bg-secondary: #F7FFF0;
+    --bg-dark: #22244E;
+}
+
+
+/* ================ padding ============== */
+.pt-120 {
+    padding-top: 120px
+}
+
+.pb-120 {
+    padding-bottom: 120px
+}
+
+.pt-8 {
+    padding-top: 80px
+}
+
+.pb-8 {
+    padding-bottom: 80px
+}
+
+/* ================ buttton ============== */
+.btn-primary {
+    border: 1px solid var(--bg-dark);
+    border-radius: 50px;
+    color: var(--bg-dark);
+    font-size: 15px;
+    font-weight: 500;
+    padding: 12px 32px;
+    background: var(--bg-primary);
+    transition: all 0.3s ease-in;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -ms-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    font-family: 'clash-grotesk';
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background: var(--bg-primary);
+    border: 1px solid var(--bg-dark);
+}
+
+.btn-secondary {
+    border: 1px solid var(--bg-dark);
+    border-radius: 50px;
+    color: var(--bg-dark);
+    font-size: 16px;
+    font-weight: 500;
+    padding: 12px 32px;
+    background: transparent;
+    transition: all 0.3s ease-in;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -ms-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    font-family: 'clash-grotesk';
+}
+
+.btn-secondary:hover {
+    color: var(--bg-dark);
+    background: transparent;
+}
+
+/* ================ Header ============== */
+.header-section {
+    box-shadow: 3px 3px 3px #E2D5B8;
+}
+
+.search_box input {
+    width: 500px !important;
+    height: 48px;
+    border-radius: 50px !important;
+    outline: none !important;
+    box-shadow: none !important;
+    border: 1px solid var(--bg-dark) !important;
+    line-height: 0px;
+    font-size: 15px;
+    font-weight: 500;
+    padding-right: 53px;
+    padding-left: 33px;
+}
+
+.search_box .search_btn {
+    background: var(--bg-primary);
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    width: 39px;
+    height: 36px;
+    border-radius: 50px !important;
+    border: none !important;
+    z-index: 5;
+}
+
+.search_box .icon {
+    position: absolute;
+    top: 11px;
+    left: 1px;
+    width: 39px;
+    z-index: 5;
+}
+
+.social_media ul li a {
+    width: 42px;
+    height: 42px;
+    display: inline-block;
+    border: 1px solid #B1B1B1;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 40px;
+    color: var(--bg-dark);
+    background-color: var(--bg-secondary);
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+
+.social_media ul li a:hover {
+    background-color: var(--bg-dark);
+    color: #ffffff;
+}
+
+.offcanvas_icon a {
+    color: var(--bg-dark);
+    font-size: 20px;
+}
+
+.offcanvas .btn-close {
+    left: 8px;
+    position: absolute;
+    top: 15px;
+    outline: none !important;
+    box-shadow: none !important;
+    font-size: 14px;
+    opacity: 1;
+    color: #212121;
+}
+
+.offcanvas_menu ul li a {
+    font-size: 17px;
+    color: var(--bg-dark);
+    padding: 8px 0px;
+    display: block;
+    border-bottom: 1px solid #f5f5f5;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+
+.offcanvas_menu ul li a:hover {
+    color: var(--bg-primary)
+}
+
+/* ================ fixed menu ============== */
+.fixed_menu {
+    background: #fff0;
+    border: 2px solid #ACACAC;
+    padding: 22px 13px;
+    border-radius: 8px;
+    left: auto;
+    position: fixed;
+    right: 10px;
+    top: 60%;
+    transform: translate3d(0, -60%, 0);
+    transition: transform .2s ease-out;
+    z-index: 99;
+    backdrop-filter: blur(75px);
+    -webkit-backdrop-filter: blur(75px);
+    -moz-backdrop-filter: blur(75px);
+    -ms-backdrop-filter: blur(75px);
+    -o-backdrop-filter: blur(75px);
+}
+
+.fixed_menu ul li a {
+    display: block;
+    width: 45px;
+    height: 45px;
+    line-height: 42px;
+    text-align: center;
+    border: 1px solid #ACACAC;
+    border-radius: 50px;
+    color: var(--bg-dark);
+    background: #fff !important;
+    font-size: 16px;
+    margin-bottom: 22px;
+    position: relative;
+    z-index: 5;
+}
+
+.fixed_menu ul li hr {
+    display: block;
+    border-top: 1px solid #ccc;
+    padding: 0;
+    background-color: var(--bg-dark);
+    height: 1px;
+    border: 0;
+    opacity: 1;
+    width: 24px;
+    margin: 1rem auto !important;
+}
+
+/* ================ Banner ============== */
+
+.bannger-section {
+    background-color: #FAF4E7;
+}
+
+.bannger-section .bg_1 img {
+    position: absolute;
+    left: 0;
+    top: 134px;
+    z-index: 0;
+}
+
+.bannger-section .bg_2 img {
+    position: absolute;
+    right: 0;
+    top: 134px;
+    z-index: 0;
+}
+
+.banner-content h1 {
+    max-width: 900px;
+    margin: auto;
+    font-size: 45px;
+    font-weight: 500;
+    color: var(--bg-dark);
+    line-height: 60px;
+    z-index: 5;
+}
+
+.banner-content p {
+    max-width: 660px;
+    margin: auto;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--bg-dark);
+    line-height: 28px;
+    z-index: 5;
+}
+
+/* ================ Services ============== */
+.services-section {
+    background-color: #28225E;
+}
+
+.services-section .custom-shape-divider-top-1713715447 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.services-section .custom-shape-divider-top-1713715447 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 100px;
+}
+
+.services-section .custom-shape-divider-top-1713715447 .shape-fill {
+    fill: #FAF4E7;
+}
+
+.section-heading h2 {
+    font-size: 42px;
+    font-weight: 500;
+    color: #28225E;
+}
+
+.section-heading p {
+    max-width: 670px;
+    margin: auto !important;
+    font-size: 16px;
+    font-family: 'clash-grotesk';
+}
+
+.section-heading ul li {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.service_item {
+    border-radius: 0px;
+    border: 0;
+    border-color: #28225E !important;
+    transition: all 0.3s ease-in;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -ms-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    min-height: 140px !important;
+}
+
+.service_item:hover {
+    background-color: #D59ED7;
+}
+
+.service_item h4 {
+    font-size: 18px;
+    color: var(--bg-dark);
+    margin-bottom: 50px;
+}
+
+.service_item span {
+    color: var(--bg-dark);
+    font-size: 16px;
+    font-weight: 500;
+    position: absolute;
+    bottom: 12px;
+}
+
+/* ================ why choose us ============== */
+
+.why-choose-section {
+    background-color: #FAF4E7;
+}
+
+.why-choose-section .bg_1 img {
+    position: absolute;
+    top: 21%;
+}
+
+.why-choose-section .bg_2 img {
+    position: absolute;
+    top: 315px;
+    right: 61px;
+}
+
+.section-heading {
+    position: relative;
+}
+
+.about_box {
+    border-radius: 16px !important;
+    background: #ddd;
+    border: none;
+    padding-top: 50px !important;
+    padding-bottom: 50px !important;
+}
+
+.about_box span {
+    width: 70px;
+    height: 70px;
+    display: inline-block;
+    background: var(--bg-dark);
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    line-height: 70px;
+    font-size: 30px;
+}
+
+.about_box h3 {
+    font-size: 24px;
+    color: #fff;
+    font-family: 'clash-grotesk', sans-serif !important;
+}
+
+.about_box p {
+    color: #fff;
+    font-size: 17px;
+    line-height: 29px;
+    font-weight: 500;
+    margin: 0;
+}
+
+/* ================ team section ============== */
+.team-section {
+    background-color: #F3F3F3;
+}
+
+.section-heading .icon svg {
+    transform: rotate(45deg);
+}
+
+.team-section .bg_1 {
+    position: absolute;
+    top: -10px;
+    right: 120px;
+}
+
+.team-section .btn-primary {
+    background-color: #28225E;
+    color: #FFFFFF;
+}
+
+.team-member {
+    border-radius: 16px !important;
+    border: none;
+}
+
+.member-info h5 {
+    font-size: 22px;
+    font-family: 'clash-grotesk', sans-serif;
+}
+
+.member-info p {
+    font-family: 'clashgrotes-regular', sans-serif;
+    font-size: 17px;
+    margin: 0;
+    padding-bottom: 6px;
+}
+
+.social-media ul li a {
+    width: 45px;
+    height: 45px;
+    display: block;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 17px;
+    line-height: 45px;
+    color: var(--bg-dark);
+    background-color: #F8F0FF;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+
+.team-member {
+    border-radius: 16px !important;
+    border: none;
+}
+
+.team-member img {
+    border-radius: 16px 16px 0px 0px !important;
+}
+
+.team-member .member-info h5 {
+    font-size: 22px;
+    font-family: 'clash-grotesk', sans-serif;
+}
+
+.team-member .member-info p {
+    font-family: 'clashgrotes-regular', sans-serif;
+    font-size: 17px;
+    margin: 0;
+    padding-bottom: 6px;
+}
+
+.team-member .social-media ul li a {
+    width: 45px;
+    height: 45px;
+    display: block;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 17px;
+    line-height: 45px;
+    color: var(--bg-dark);
+    background-color: #F8F0FF;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+
+.team-member .card-footer {
+    border-radius: 4px !important;
+    background: #28225E;
+    border: none !important;
+    height: 48px;
+    line-height: 29px;
+}
+
+.team-member .card-footer a {
+    color: #fff;
+    font-size: 16px;
+}
+
+.team-section .bg-1 {
+    position: absolute;
+    top: -90px;
+    left: -70px;
+}
+
+.team-section .bg-2 {
+    position: absolute;
+    bottom: -90px;
+    right: -70px;
+}
+
+/* ================ brand section ============== */
+.brand-section {
+    background-color: #28235F;
+    padding-top: 120px;
+}
+
+.brand-section .section-heading h2 {
+    color: #755FFD;
+}
+
+.brand-section .bg {
+    position: absolute;
+    top: -283px;
+    right: 0;
+    left: 0;
+}
+
+.brand-logo-wrap {
+    height: 200px;
+    display: flex;
+    align-items: center;
+}
+
+/* ================ testimonial ============== */
+.testimonial-section {
+    background-color: #FAF4E7;
+}
+
+.client-reviews {
+    border: none;
+    border-radius: 16px;
+    z-index: 1;
+}
+
+.review-info p {
+    font-size: 16px;
+    color: var(--bg-dark);
+    font-weight: 500;
+    line-height: 29px;
+    font-family: "clash-grotesk", sans-serif;
+    margin: 0;
+}
+
+.client-reviews .card-footer {
+    border: none;
+    background: transparent;
+}
+
+.client-reviews .card-footer h4 {
+    font-size: 18px;
+    color: var(--bg-dark);
+    margin-bottom: 9px;
+}
+
+.client-reviews .card-footer h6 {
+    font-size: 15px;
+}
+
+.client-reviews .card-footer p {
+    font-size: 17px;
+}
+
+
+.client-photo img {
+    border-radius: 50px;
+    width: 70px;
+    height: 70px;
+}
+
+.testimonial-section .bg_1 {
+    position: absolute;
+    top: 600px;
+    left: 0;
+}
+
+.testimonial-section .bg_2 {
+    position: absolute;
+    top: 640px;
+    right: 0;
+}
+
+.vector_bg {
+    position: absolute;
+    top: -73px;
+    right: -56px;
+    z-index: 0;
+}
+
+/* ================ blog ============== */
+
+.blog-section {
+    background-color: #28225E;
+}
+
+.blog-wrap {
+    border-radius: 12px !important;
+    border: none !important;
+}
+
+.blog-photo img {
+    text-align: center !important;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: #28488917;
+    height: 220px;
+    overflow: hidden;
+    border-radius: 12px 12px 0px 0px !important;
+}
+
+.blog-info h4 {
+    font-size: 21px;
+    color: var(--bg-dark);
+    line-height: 30px;
+    margin-bottom: 22px;
+}
+
+.blog-info p {
+    font-size: 16px;
+}
+
+.blog-wrap .card-footer {
+    background: transparent;
+    border: none;
+    padding-bottom: 27px;
+}
+
+.blog-wrap .btn-primary {
+    background: #F2CD42;
+}
+
+/* ================ hero ============== */
+.hero-section {
+    background-color: #FAF4E7;
+}
+
+.hero_wrapper {
+    background: #FDBA55;
+    padding: 65px 20px;
+    border-radius: 16px;
+}
+
+.hero_wrapper h3 {
+    font-size: 31px;
+    font-weight: 600;
+}
+
+.hero_wrapper p {
+    font-size: 18px;
+    color: var(--bg-dark);
+    font-weight: 500;
+}
+
+.hero-section .bg_2 {
+    position: absolute;
+    top: 0px;
+    right: 20px;
+}
+
+.hero-section .bg_1 {
+    position: absolute;
+    bottom: 47px;
+    left: 0;
+}
+
+/* ================ Footer ============== */
+.footer-section {
+    background-color: #141312;
+}
+
+.footer-content p {
+    color: #fff;
+    font-size: 15px;
+    margin: 0;
+    padding-bottom: 12px;
+}
+
+.footer-content p span {
+    font-family: "clash-grotesk";
+}
+
+
+.footer-heading h4 {
+    color: #fff;
+    font-size: 16px;
+    font-family: "clash-grotesk";
+    margin-bottom: 25px;
+}
+
+.footer-links a {
+    font-size: 14px;
+    color: #fff;
+    display: block;
+    padding: 7px 0px;
+}
+
+.footer-links a:hover {
+    color: #d3d5d8;
+}
+
+
+
+.footer-bottom p a {
+    margin: 0;
+    font-size: 16px;
+    color: #fff;
+    display: inline-block;
+    padding: 0px 7px;
+    transition: all 0.4s ease;
+}
+
+.footer-bottom p {
+    color: #fff;
+}
+
+.footer-bottom p a:hover {
+    color: #d3d5d8;
+}
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+     Helper classes
+     ========================================================================== */
+
+/*
+   * Hide visually and from screen readers
+   */
+
+.hidden,
+[hidden] {
+    display: none !important;
+}
+
+/*
+   * Hide only visually, but have it available for screen readers:
+   * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+   *
+   * 1. For long content, line feeds are not interpreted as spaces and small width
+   *    causes content to wrap 1 word per line:
+   *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+   */
+
+.visually-hidden {
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    /* 1 */
+}
+
+/*
+   * Extends the .visually-hidden class to allow the element
+   * to be focusable when navigated to via the keyboard:
+   * https://www.drupal.org/node/897638
+   */
+
+.visually-hidden.focusable:active,
+.visually-hidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    white-space: inherit;
+    width: auto;
+}
+
+/*
+   * Hide visually and from screen readers, but maintain layout
+   */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+   * Clearfix: contain floats
+   *
+   * The use of `table` rather than `block` is only necessary if using
+   * `::before` to contain the top-margins of child elements.
+   */
+
+.clearfix::before,
+.clearfix::after {
+    content: "";
+    display: table;
+}
+
+.clearfix::after {
+    clear: both;
+}
+
+/* ==========================================================================
+     EXAMPLE Media Queries for Responsive Design.
+     These examples override the primary ('mobile first') styles.
+     Modify as content requires.
+     ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+     Print styles.
+     Inlined to avoid the additional HTTP request:
+     https://www.phpied.com/delay-loading-your-print-css/
+     ========================================================================== */
+
+@media print {
+
+    *,
+    *::before,
+    *::after {
+        background: #fff !important;
+        color: #000 !important;
+        /* Black prints faster */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]::after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]::after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+    a[href^="#"]::after,
+    a[href^="javascript:"]::after {
+        content: "";
+    }
+
+    pre {
+        white-space: pre-wrap !important;
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
