@@ -77,6 +77,9 @@
         height: 38px;
         line-height: 35px;
     }
+    .site_cookie{
+        left: 20px;
+    }
 }
 
 
@@ -118,6 +121,11 @@
         position: absolute;
         bottom: -107px;
         right: -40px;
+    }
+    .site_cookie{
+        left: 9px;
+        bottom: 1px;
+        max-width: 376px;
     }
 }
 
