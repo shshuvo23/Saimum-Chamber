@@ -51,6 +51,7 @@
     .hero_wrapper p {
         font-size: 16px;
     }
+    
 }
 
 
@@ -117,5 +118,15 @@
         position: absolute;
         bottom: -107px;
         right: -40px;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .logo img {
+        width: 110px;
+    }
+    .header-section .btn-primary {
+        padding: 5px 9px;
+        font-size: 13px;
     }
 }
