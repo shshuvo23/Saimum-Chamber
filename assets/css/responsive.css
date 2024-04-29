@@ -51,6 +51,11 @@
     .hero_wrapper p {
         font-size: 16px;
     }
+    .contact-info {
+        width: 95%;
+        padding: 40px;
+        height: 400px;
+    }
     
 }
 
@@ -77,8 +82,22 @@
         height: 38px;
         line-height: 35px;
     }
-    .site_cookie{
-        left: 20px;
+    .site_cookie {
+        bottom: 37px;
+        left: 16px;
+        margin-right: 18px;
+    }
+    .contact_bg{
+        min-height: 600px;
+    }
+}
+
+@media screen and (max-width:575px) {
+    .contact_bg{
+        min-height: 400px;
+    }
+    .contact-info {
+        height: 324px;
     }
 }
 
@@ -121,11 +140,6 @@
         position: absolute;
         bottom: -107px;
         right: -40px;
-    }
-    .site_cookie{
-        left: 9px;
-        bottom: 1px;
-        max-width: 376px;
     }
 }
 
